@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - CompositionRoot
     - FollowingCamera
     - GameFlow
+    - GameOverMenu
     - KeyboardInputReader
     - Menu
     - MenuSceneCompositionRoot
@@ -14,11 +15,13 @@ ScriptsOnlyBuild:
     - RecordsMenu
     - ScoreCounter
     - ScorePresentation
+    - SettingsMenu
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_ColorGradient
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -34,6 +37,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
     Assets/Scenes/GameScene.unity:
@@ -70,43 +75,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11808}
     - Class: 114
-      Script: {instanceID: 11822}
+      Script: {instanceID: 11824}
     - Class: 114
-      Script: {instanceID: 11834}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 11886}
+      Script: {instanceID: 11888}
     - Class: 114
-      Script: {instanceID: 11974}
+      Script: {instanceID: 11976}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12188}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 12568}
+      Script: {instanceID: 12572}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 12750}
     - Class: 114
-      Script: {instanceID: 12748}
+      Script: {instanceID: 12962}
     - Class: 114
-      Script: {instanceID: 12960}
+      Script: {instanceID: 13116}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 13262}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 13422}
     - Class: 114
-      Script: {instanceID: 13418}
+      Script: {instanceID: 13512}
     - Class: 114
-      Script: {instanceID: 13508}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 13576}
-    - Class: 114
-      Script: {instanceID: 13760}
+      Script: {instanceID: 13764}
     - Class: 114
       Script: {instanceID: 13992}
+    - Class: 114
+      Script: {instanceID: 14000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -149,35 +154,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11808}
     - Class: 114
-      Script: {instanceID: 11834}
+      Script: {instanceID: 11836}
     - Class: 114
-      Script: {instanceID: 12058}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12512}
+      Script: {instanceID: 12084}
     - Class: 114
-      Script: {instanceID: 12546}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12990}
+      Script: {instanceID: 12296}
     - Class: 114
-      Script: {instanceID: 13114}
+      Script: {instanceID: 12346}
     - Class: 114
-      Script: {instanceID: 13258}
+      Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 13508}
+      Script: {instanceID: 12992}
     - Class: 114
-      Script: {instanceID: 13576}
+      Script: {instanceID: 13116}
     - Class: 114
-      Script: {instanceID: 13768}
+      Script: {instanceID: 13262}
     - Class: 114
-      Script: {instanceID: 13882}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13992}
+      Script: {instanceID: 13298}
     - Class: 114
-      Script: {instanceID: 20420}
+      Script: {instanceID: 13512}
     - Class: 114
-      Script: {instanceID: 20422}
+      Script: {instanceID: 13580}
+    - Class: 114
+      Script: {instanceID: 13772}
+    - Class: 114
+      Script: {instanceID: 13878}
+    - Class: 114
+      Script: {instanceID: 13890}
+    - Class: 114
+      Script: {instanceID: 14000}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -383,6 +396,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: 0d1cd388f0b681e0fa36c84a5f1c5a7f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Menu
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -521,7 +540,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: ebfe963773cfb9ce715540a9b7d0e098
+      Hash: 2ed1b0f41f8b216767e0b173c58560f3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuSceneCompositionRoot
@@ -627,6 +646,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextSelector_A
+  - hash:
+      serializedVersion: 2
+      Hash: b95cc7154c231b9148c83ee652230916
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SettingsMenu
   - hash:
       serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
@@ -773,6 +798,12 @@ ScriptsOnlyBuild:
     className: TeleType
   - hash:
       serializedVersion: 2
+      Hash: 85cb89a5bf4183e6178d2848035912f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecordsMenu
+  - hash:
+      serializedVersion: 2
       Hash: c12f6929b034322884ced721fca65b10
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -851,6 +882,12 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 45bb2b2655d27f3704df1b7760176a73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOverMenu
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -885,24 +922,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 61d9fce4393e3055202d3b04b2884772
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Menu
-  - hash:
-      serializedVersion: 2
-      Hash: 85cb89a5bf4183e6178d2848035912f8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: RecordsMenu
-  - hash:
-      serializedVersion: 2
-      Hash: 45bb2b2655d27f3704df1b7760176a73
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameOverMenu
   platform: 5
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
